@@ -3,7 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | Prajwal N J </title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and collaborations.">
+    <meta name="keywords" content="Prajwal N J, Portfolio, Web Developer, React, Node.js, JavaScript, HTML, CSS, Freelance Developer">
+    <meta name="author" content="Prajwal N J">
+    <title>My Portfolio | Prajwal N J</title>
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="My Portfolio | Prajwal N J">
+    <meta property="og:description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and collaborations.">
+    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:url" content="[Your Portfolio URL]">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My Portfolio | Prajwal N J">
+    <meta name="twitter:description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and collaborations.">
+    <meta name="twitter:image" content="images/profile.jpg">
+    <!--Favicon-->
+    <link rel="icon" type="favicon/png" href="images/favicon.png" alt="Favicon">
 </head>
 <body>
  
@@ -25,7 +42,10 @@
     <!-- ABOUT SECTION -->
     <section id="about">
         <h2>About Me</h2>
-        <img src="image.jpeg" alt="Profile photo of Prajwal N J" width="200">
+        <figure class="profile-figure">
+                    <img src="images/image.jpeg" alt="Prajwal N J profile photo" width="300">
+                    <figcaption>Prajwal N J — Web Developer</figcaption>
+                </figure>
         <p>I love building things on the web. Currently learning HTML, CSS,
            JavaScript, and React.</p>
     </section>
@@ -68,6 +88,8 @@
             <p>Description of project 1</p>
             <a href="#">View Project</a>
         </div>
+        <!--Embed YouTube Video (iframe)-->
+            <iframe width="300" height="169" src="https://www.youtube.com/embed/tqjJrXd27m4" title="YouTube video player" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
     </section>
  
     <!-- CONTACT SECTION -->
@@ -78,8 +100,30 @@
     <input type="number" id="contactnumber" name="contactnumber" min="18" max="100">
     </section> 
 
+<section id="contact">
+    <h1>Have a project in mind? Let's talk!</h1>
+ 
+    <form action="#" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your name here" required>
+ 
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email here" required>
+               <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+            <option value="">-- Select a topic --</option>
+            <option value="hire">I want to hire you</option>
+            <option value="collab">I want to collaborate</option>
+            <option value="other">Other</option>
+        </select>
+             <!-- Number Input -->
+    <label for="contactnumber">contactnumber:</label>
+    <input type="number" id="contactnumber" name="contactnumber" min="1000000000" max="9999999999">
+    </section> 
+
 <label for="country">Country:</label>
-        <option value="">-- Choose Country --</option>
         <select name="country" id="country">
   <option value="" disabled selected>Select a country</option>
   <option value="af">Afghanistan</option>
@@ -277,11 +321,21 @@
   <option value="ye">Yemen</option>
   <option value="zm">Zambia</option>
   <option value="zw">Zimbabwe</option>
-<!-- Password Input -->
-    <label for="password">Password:</label>
+</select>
+ 
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"
+                  placeholder="Tell me about your project..." required></textarea>
+ 
+        <button type="submit">Send Message 🚀</button>
+         <label for="password">Password:</label>
     <input type="password" id="password" name="password" minlength="8">
  
-    </section>
+    <!-- Number Input -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="100">
+    </form>
+</section>
  
     <!-- FOOTER -->
     <footer>
