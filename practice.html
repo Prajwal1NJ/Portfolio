@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Practice Activity</title>
+</head>
+<body>
+
+  <!-- INPUT BOX AND BUTTON -->
+  <form id="activityForm">
+    <input type="text" id="textInput" placeholder="Type something..." />
+    <button type="submit" id="submitBtn">Click Me</button>
+  </form>
+
+  <!-- JavaScript Code -->
+  <script>
+    const form = document.getElementById("activityForm");
+    const input = document.getElementById("textInput");
+    const button = document.getElementById("submitBtn");
+
+    button.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const enteredValue = input.value;
+
+      console.log("User Input:", enteredValue);
+
+      alert("Button clicked! Input value: " + enteredValue);
+    });
+  </script>
+
+</body>
+</html>
